@@ -389,7 +389,7 @@
 
                         <ul>
 
-                            <li>Score: -1 — Misleading in this case since the overall yearly number of police complaints is increasing year by year, so a lower percentage of substantiated complaints could still mean a higher overall number of substantiated complaints.</li>
+                            <li>Score: -2 —This is misleading because the overall yearly number of complaints actually does increase year by year. However, by choosing smaller bin sizes when aggregating percentages, we artificially increase variance in the data which can be used to hide noticeable trends and observations. An example of this might be one time period which will have 1 substantiated claim out of 2 in total, but since we are using percentages, it will have the same percentage as a time frame with 25 substantiated claims out of 50 in total. And so because we are intentionally misleading the viewer with distorted data, this receives a very negative rating.</li>
 
                         </ul>
         
@@ -397,11 +397,11 @@
         
                             <li>
         
-                                <strong>Rationale 2:</strong> Only showing substantiated rates
+                                <strong>Rationale 2:</strong> Only showing substantiated complaint rates instead of overall complaint rates
         
                                 <ul>
         
-                                    <li>Score: -2 — Deceiving because a large number of complaints never get resolved and get reported as unsubstantiated instead of exonerated or substantiated. In fact, the percentage of unsubstantiated complaints rises throughout Bloomberg’s tenure.
+                                    <li>Score: -0.5 — Because a large number of complaints never get resolved and get reported as unsubstantiated instead of exonerated/substantiated, this metric skews the actual monthly rate of how many complaints were filed. (Indeed, the rate of overall claims increases by month.) However, the fact that we analyze substantiated claims doesn’t detract from the claim that police misconduct increased—it could possibly be that police misconduct primarily occurred in situations of the substantiated claims. To note, though, another reasonable hypothesis could be that substantiated claim rate did not largely change because police investigators were overwhelmed by the large relative increase in filed police complaints. Since in that situation investigators would have had less time to review each complaint, they could have chosen to classify complaints without significant evidence as unsubstantiated without delving into them further.
                                     </li>        
                                 </ul>
         
@@ -409,11 +409,11 @@
         
                             <li>
         
-                                <strong>Rationale 3:</strong> Neutral colors to reflect the lack of significant change
+                                <strong>Rationale 3:</strong> Neutral colors to reflect the lack of significant change and honest Y-axis scaling
         
                                 <ul>
         
-                                    <li>Score: +1 — It is a common technique to use appropriate colors to convey the message of a visual </li>        
+                                    <li>Score: +1 — The use of neutral colors avoids manipulating the audience’s impression of the data before even understanding the data that the graph is trying to represent. The data essentially is able to speak for itself without using alarming colors. Additionally, the graph represents the full 0% to 100% Y-Axis that allows us to illustrate the 4% drop as a minor fluctuation rather than a dramatic drop. We also avoid zooming into the graph and cutting off percentages on the Y-Axis to prioritize an earnest attempt to represent the holistic change. </li>        
                                 </ul>
         
                             </li>
