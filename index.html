@@ -54,9 +54,14 @@
                 }
             }
 
+            /* OPTION 2: Responsive Scaling for H2 */
             h2 {
-                font-size: 180%;
+                /* Shrinks to 1.1rem on small screens, grows to 1.8rem on large ones */
+                font-size: clamp(1.1rem, 2.2vw, 1.8rem); 
                 color: var(--color-neutral-30);
+                white-space: nowrap;      /* Prevents wrapping */
+                overflow: hidden;         /* Keeps layout clean if it overflows */
+                text-overflow: ellipsis;  /* Adds '...' if the screen is EXTREMELY small */
             }
 
             h3 {
@@ -118,7 +123,7 @@
                 }
             }
 
-            /* FIX: Responsive Image Styling */
+            /* Responsive Image Styling */
             figure img {
                 max-width: 100%;
                 height: auto;
@@ -179,15 +184,4 @@
             <section>
                 <h3>AGAINST the Proposition</h3>
                 <figure>
-                    <img src="IMAGE_FILENAME" alt="Alternative view of the data" />
-                    <figcaption>Comparison of NYPD Complaints relative to total police interactions.</figcaption>
-                </figure>
-                </section>
-
-            <section>
-                <h2>Final Reflection</h2>
-                <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
-            </section>
-        </main>
-    </body>
-</html>
+                    <img src="IMAGE_FILENAME" alt="Alternative
