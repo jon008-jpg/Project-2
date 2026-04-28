@@ -25,20 +25,13 @@
             }
 
             /* Headings */
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
+            h1, h2, h3, h4, h5, h6 {
                 line-height: 1.1;
                 font-weight: 600;
                 text-wrap: balance;
             }
 
-            h1,
-            h2 {
+            h1, h2 {
                 border-bottom: 1px solid var(--color-neutral-80);
                 padding-bottom: 0.2em;
             }
@@ -71,9 +64,7 @@
             }
 
             /* Lists */
-
-            ul,
-            ol {
+            ul, ol {
                 padding-inline-start: 2em;
             }
 
@@ -88,7 +79,6 @@
             }
 
             /* Sectioning elements */
-
             header {
                 padding-block: 1em;
                 text-align: center;
@@ -102,7 +92,6 @@
             }
 
             /* Figures */
-
             figure {
                 margin: 1em 0;
                 padding: 0.5rem;
@@ -126,18 +115,17 @@
                         font-weight: bold;
                         color: var(--color-neutral-40);
                     }
-
-                    a:not(:hover, :focus, :active) {
-                        color: inherit;
-                        text-decoration: underline;
-                        text-decoration-color: color-mix(
-                            in lab,
-                            currentColor,
-                            transparent 70%
-                        );
-                    }
                 }
             }
+
+            /* FIX: Responsive Image Styling */
+            figure img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
         </style>
     </head>
 
@@ -147,7 +135,6 @@
                 <small>Project 2</small>
                 Persuasive or Deceptive Visualization?
             </h1>
-
             <p><strong>Jocelyn Ng</strong> — <em>jon008@ucsd.edu</em></p>
         </header>
 
@@ -158,82 +145,49 @@
                 <h3>FOR the Proposition</h3>
 
                 <figure>
-                    <img src="proposition1a.png" alt="" />
+                    <img src="proposition1a.png" alt="A chart showing NYPD complaint rates" />
                     <figcaption>The NYPD Complaint Rate Climbed Steadily After Bloomberg Expanded Stop-and-Frisk Policy.</figcaption>
                 </figure>
 
                 <p>Design Decisions and Rationale:</p>
 
                 <ul>
-                  <li>
-                    <strong>Rationale 1:</strong> [Your Main Point Here]
-                    <ul>
-                      <li>Sub-point A for rationale 1</li>
-                      <li>Sub-point B for rationale 1</li>
-                    </ul>
-                  </li>
-                
-                  <li>
-                    <strong>Rationale 2:</strong> [Your Main Point Here]
-                    <ul>
-                      <li>Sub-point A for rationale 2</li>
-                      <li>Sub-point B for rationale 2</li>
-                    </ul>
-                  </li>
-                
-                  <li>
-                    <strong>Rationale 3:</strong> [Your Main Point Here]
-                    <ul>
-                      <li>Sub-point A for rationale 3</li>
-                      <li>Sub-point B for rationale 3</li>
-                    </ul>
-                  </li>
+                    <li>
+                        <strong>Rationale 1:</strong> Focus on Temporal Correlation
+                        <ul>
+                            <li>Sub-point A for rationale 1</li>
+                            <li>Sub-point B for rationale 1</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Rationale 2:</strong> Visual Emphasis
+                        <ul>
+                            <li>Sub-point A for rationale 2</li>
+                            <li>Sub-point B for rationale 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Rationale 3:</strong> Data Selection
+                        <ul>
+                            <li>Sub-point A for rationale 3</li>
+                            <li>Sub-point B for rationale 3</li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
 
             <section>
                 <h3>AGAINST the Proposition</h3>
-
                 <figure>
-                    <img src="IMAGE_FILENAME" alt="" />
-                    <figcaption>BRIEF CAPTION HERE.</figcaption>
+                    <img src="IMAGE_FILENAME" alt="Alternative view of the data" />
+                    <figcaption>Comparison of NYPD Complaints relative to total police interactions.</figcaption>
                 </figure>
-
-                <p>Design Decisions and Rationale:</p>
-
-                <ul>
-                  <li>
-                    <strong>Rationale 1:</strong> [Your Main Point Here]
-                    <ul>
-                      <li>Sub-point A for rationale 1</li>
-                      <li>Sub-point B for rationale 1</li>
-                    </ul>
-                  </li>
-                
-                  <li>
-                    <strong>Rationale 2:</strong> [Your Main Point Here]
-                    <ul>
-                      <li>Sub-point A for rationale 2</li>
-                      <li>Sub-point B for rationale 2</li>
-                    </ul>
-                  </li>
-                
-                  <li>
-                    <strong>Rationale 3:</strong> [Your Main Point Here]
-                    <ul>
-                      <li>Sub-point A for rationale 3</li>
-                      <li>Sub-point B for rationale 3</li>
-                    </ul>
-                  </li>
-                </ul>
-            </section>
+                </section>
 
             <section>
                 <h2>Final Reflection</h2>
-
                 <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
             </section>
         </main>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"c822b88e119346678db149ed7b7721c9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
