@@ -308,13 +308,23 @@
 
                     <li>
 
-                        <strong>Rationale 1:</strong> xyz
+                        <strong>Rationale 1:</strong> Cherry-picked time frames whose running avg. complaints/month values would result in the highest slopes post-Bloomberg; also, the y-axis begins around 5 and did not leave room above the maximum value, allowing the line’s slope to stretch more vertically
 
                         <ul>
 
-                            <li>Sub-point A for rationale 1</li>
+                            <li>Score: -2 — By truncating the dataset at 2009—despite data being available until the end of Bloomberg’s last term—the chart ensures the running average’s slope is maximally high. Thus, this design choice prevents the viewer from observing any plateaus in complaint rates that occurred during the latter half of the Bloomberg administration. Also, the y-axis starts around 5 instead of 0, which removes the visual baseline. This manipulates the viewer's perception, for a 3x numerical increase looks much more visually steep because the bottom chunk of the data is cut out. More subtly, I chose to start the y-axis around 5 as viewers would have a harder time identifying that the y-axis was manipulated compared to if it started at a higher value—which I considered doing.
+                            </li>
+                        </ul>
 
-                            <li>Sub-point B for rationale 1</li>
+                    </li>
+
+                    <li>
+
+                        <strong>Rationale 2:</strong> Used running average complaints/month rather than raw complaints/month
+
+                        <ul>
+
+                            <li>Score: -1 — By using a "running cumulative mean" instead of discrete yearly/monthly averages, the line smooths over the data and will always trend upwards as long as the new monthly values are higher than the old historical average. This entirely masks any individual months or years post-2002 where complaints might have actually dropped or plateaued. However, I would argue that a running cumulative mean is more visually informative than plotting raw complaints/month. I did try the latter, where I saw a lot of variance in the data that might complicate how a viewer might interpret the obviously upward trend. Conversely, using a running average smooths out such variance.</li>
 
                         </ul>
 
@@ -322,28 +332,32 @@
 
                     <li>
 
-                        <strong>Rationale 2:</strong> Visual Emphasis
+                        <strong>Rationale 3:</strong> In the title and subtitle, the running average metric and data source were clearly identified
 
                         <ul>
 
-                            <li>Sub-point A for rationale 2</li>
-
-                            <li>Sub-point B for rationale 2</li>
-
+                            <li>Score: +1.5 — By explicitly naming the metric as a running cumulative mean, the chart is transparent about how the data was transformed to show a long-term trend. This transparency prevents viewers from mistaking the smooth line for raw monthly totals, which would look a lot "noisier" and harder to interpret. Additionally, the attribution of the data to "unique CCRB complaints" specifically references Civilian Complaint Review Board—i.e., the source of the data—providing the viewer an opportunity to verify the claims put forward in the visualization.</li>
                         </ul>
 
                     </li>
 
                     <li>
 
-                        <strong>Rationale 3:</strong> Data Selection
+                        <strong>Rationale 4:</strong> Redundantly encoded y-value magnitude in both a binned sequential color scale and line width
 
                         <ul>
 
-                            <li>Sub-point A for rationale 3</li>
+                            <li>Score: -1 — In this case, the fact that the redundant encoding led to the dramatization of the change in the running average—is obviously a deception technique. However, I would argue that if the running average trend later went down, the redundant encoding would equally make the graph more interpretable in the converse way. Further, I used a binned color scale instead of a continuous color scale, which makes y-values more discretely interpretable instead of ambiguous.</li>
+                        </ul>
 
-                            <li>Sub-point B for rationale 3</li>
+                    </li>
 
+                    <li>
+
+                        <strong>Rationale 5:</strong> Included redundant annotations—including a visually striking arrow, and annotations comparing number of total complaints in the 4 years immediately preceding and following Bloomberg—to dramatize change in y-value
+                        <ul>
+
+                            <li>Score: -2 — The integration of a prominent, gradient-filled upward arrow in the background functions as a pre-attentive visual cue that anchors the narrative of a "spike" before the viewer can process the actual data line or axes. Further, by juxtaposing running averages per month with aggregate totals (497 versus 1,562 complaints), the visualization conflates volume with rate. This design choice is intended to overwhelm the viewer with scale, providing a sort of “redundant insight” to bolster the upward trend of the running average.</li>
                         </ul>
 
                     </li>
@@ -367,7 +381,7 @@
                 </figure>
 
 
-                                <ul>
+                <ul>
 
                     <li>
 
